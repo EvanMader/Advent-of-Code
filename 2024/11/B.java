@@ -13,8 +13,6 @@ public class B {
             rocks.add(new Rock(stone, 1l));
         }
 
-
-
         for (int blink = 0; blink < 75; blink++) {
             for (int i = 0; i < rocks.size(); i++) {
                 for (int j = 0; j < rocks.size(); j++) {
