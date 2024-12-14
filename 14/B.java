@@ -43,7 +43,6 @@ public class B {
                 }
             }
             
-            if (counter % 100 == 0) System.out.println(counter);
         }
 
     }

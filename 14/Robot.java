@@ -20,10 +20,8 @@ public class Robot {
     }
 
     public void move(int i) {
-        for (int j = 0; j < i; j++) {
-            x = ((x + vx) % 101 + 101) % 101;
-            y = ((y + vy) % 103 + 103) % 103;
-        }
+        x = ((x + vx * i) % 101 + 101) % 101;
+        y = ((y + vy * i) % 103 + 103) % 103;
     }
 
     public int quad() {
