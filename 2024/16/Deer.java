@@ -23,7 +23,7 @@ public class Deer {
 
     public int cost() {
         PriorityQueue<State> states = new PriorityQueue<>((s1, s2) -> Integer.compare(s1.v, s2.v));
-        states.add(new State(start.x, start.y, 1, 0));
+        states.add(new State(start.x, start.y, 2, 0));
         Set<Location> locs = new HashSet<>();
         Map<State, State> parent = new HashMap<>();
         return cost(states, locs, parent);
@@ -32,7 +32,7 @@ public class Deer {
     public int cost(PriorityQueue<State> queue, Set<Location> locs, Map<State, State> parent) {
         while (true) {
             State current = queue.poll();
-            if (grid[current.y][current.x] == 'E') {
+            if (grid[current.y][current.x] == 'S') {
                 printPath(current, parent);
                 return current.v;
             }
