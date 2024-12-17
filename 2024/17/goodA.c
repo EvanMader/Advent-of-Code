@@ -5,7 +5,7 @@ int main() {
     long long b = 0;
     long long c = 0;
 
-    for (int i = 0; i < 17; i++) {
+    for (int i = 0; i < 16; i++) {
         b = a % 8;
         b = b ^ 7;
         c = a >> b;

@@ -24,6 +24,7 @@ int main() {
             }
         }
         printf("%lld\n", saved);
+        if (result == 0) break;
         saved *= 8;
         a = saved;
     }
